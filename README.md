@@ -25,7 +25,7 @@ We can see from this chart a few interesting takeaways:
 
 The CEO also asked us to provide some useful visualizations with the same data that might help her make decisions on how to increase performance and also to better serve areas.
 
-![Image 2: Total Fare By City Type](/analysis/Fig1.png)
+![Image 2: Total Fare By City Type](/analysis/PyBer_fare_summary.png)
 
 We get some additional insight looking at the data over time:
 1. The total fares for urban, suburban, and rural are always ranked in the same order, regardless of time of year (at least for the four months in question).  If we saw the lines cross one another at certain times, it implies there is opportunity for surge or peak pricing within that given geography and time.
