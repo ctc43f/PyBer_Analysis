@@ -3,9 +3,11 @@
 ## Overview of Project
 The CEO of Pyber has asked us to conduct some exploratory data analysis on rideshare data from three different geographical perspectives, summarize the information into a table that can provide some high-level insights, and visualize the data to help assist with decision making.  Specifically, the CEO wishes to improve access to its ridesharing services and determine affordability for underserved neighborhoods.
 
+
 ### Purpose:
 - Aggregate the raw data files into some high-level summary statistics
 - Visualize the data to provide insightful visualizations that can help with senior management decision making
+
 
 ## Summary Statistics
 Using the provided data of rideshares completed in the first four months of 2019, we get the below set of summary statistics by geography:
@@ -17,21 +19,17 @@ We can see from this chart a few interesting takeaways:
 2. Average fare per ride is not significantly different among the three categories.  It's hard to say why this is: whereas the distances per ride are likely longer for rural trips, which would normally generate higher costs, the demand is lower overall and would offer a lower rate accordingly.  
 3. Urban areas generate the most profit for Pyber, assuming either the revenue generates is per-ride or percentage of fare.  Whereas the CEO might want to serve all areas, there might be less opportunity as you move further away from the city.
 
+
 ## Visualization of Fares by Geography Over Time
 The CEO also asked us to provide some useful visualizations with the same data that might help her make decisions on how to increase performance and also to better serve areas.
 
 ![Image 2: Total Fare By City Type](/analysis/Fig1.png)
 
-There are several issues with this visualization that make it hard to quickly gain insight from it:
-- Percentage cancelled is 0 in all cases, so having that on the plot adds "noise"
-- The success and failure lines are same in magnitude and opposite in direction; the information is redundant and confuses the overall message
-- Color choice could be better: I would recolor the lines to green and red to more easily indicate which line is the positive outcome and which is the negative
+We get some additional insight looking at the data over time:
+1. The total fares for urban, suburban, and rural are always ranked in the same order, regardless of time of year (at least for the four months in question).  If we saw the lines cross one another at certain times, it implies there is opportunity for surge or peak pricing within that given geography and time.
+2. There is some weekly cyclicality through the week.  For example, the line "wobbles" for Urban in March, implying that demand peaks on the same day of each week and then tapers off, building back up the following week.  Assuming the company doesn't adjust pricing currently for day of week, there might be opportunity for flexible pricing through the week.
+3. We can see that there is some shared demand in approximately the third week of February; all three lines spike up at the same period of time.  Assuming this is something like a local sporting event, Valentine's Day, etc. the company could try different marketing campaigns or tactics to boost ridership when the demand is there.
 
-Using the plot as-is, Louise has an approximate 52% chance of having a successful initiative if she maintains the $10,000 target.  If she were to aim for a higher target, her chances of being successful continue to decrease until the target funding level hits $35K.  Depending on the scope of her play, asking for that much money without the content of a similarly targeted initiative might make it comparatively less appealing and thus not get funded.  Louise could consider crowdfunding at a lower dollar target and seeking the additional funding from investors; initiatives at a target level of $4,999 have around 20 percentage points higher chance of being successful.
-
-**The recommendation to Louise would be, based on this analysis, to launch with a goal of $4,999 and either seeking additional, more traditional funding, or scale back the play to align the budget with this target.**
-
-In the next section I have a couple alternate versions of the above plots that might provide more insight; I will provide updated recommendations for Louise based on those revised visualizations.
 
 ### Challenges and Difficulties Encountered
 Although I didn't encounter any challenges, I know that there are some areas that might provide challenging when first trying to use Excel:
